@@ -3,11 +3,16 @@
 
 require_once ("config.php");
 
-$sql = new sql();
+//$sql = new sql();
 
-$usuarios  = $sql-> select("SELECT * FROM tb_usuarios");
+//$usuarios  = $sql-> select("SELECT * FROM tb_usuarios");
 
-echo json_encode($usuarios);
- 
+
+
+$Leonardo = new usuario();
+
+$Leonardo->loadbyid(8); 
+
+echo $Leonardo;
 
  ?>
