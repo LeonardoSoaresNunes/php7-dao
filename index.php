@@ -70,6 +70,11 @@ echo $aluno;
 
 */
 
+/*
+
+//Alterar dados de um usuario 
+
+
 $usuario = new usuario();
 
 $usuario=>loadyByid(8);
@@ -77,5 +82,15 @@ $usuario=>loadyByid(8);
 $usuario=> update("aluno" , "leonardo");
 
 echo $usuario;
+*/
+
+$usuario = new usuario();
+
+$usuario =>loadyByid(3);
+
+$usuario=>delete();
+
+echo $usuario;
+
 
  ?>
