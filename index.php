@@ -51,8 +51,31 @@ require_once ("config.php");
 //echo "_______________________________"
 
 //Carrega um usuario usando o login e a senha 
+//$usuario = new usuario();
+//$usuario -> login("root" , "!@$%");
+
+//echo $usuario;
+
+//echo "_______________________________"
+
+/*
+$aluno = new Usuario("aluno" , "@aluno");
+
+//$aluno ->setDeslogin("aluno");
+//$aluno->setDessenha("@aluno");
+
+$aluno ->insert();
+
+echo $aluno;
+
+*/
+
 $usuario = new usuario();
-$usuario -> login("root" , "!@$%");
+
+$usuario=>loadyByid(8);
+
+$usuario=> update("aluno" , "leonardo");
 
 echo $usuario;
+
  ?>
